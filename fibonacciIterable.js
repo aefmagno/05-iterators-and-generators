@@ -1,4 +1,4 @@
-function fibonacciGenerator(start = 0, end = 0) {
+function fibonnaciIterable(start = 0, end = 0) {
   let counter = start
   let number1 = 0
   let number2 = 1
@@ -23,8 +23,8 @@ function fibonacciGenerator(start = 0, end = 0) {
   }
 }
 
-const generatorObject = fibonacciGenerator(0, 10)
+const iterable = fibonnaciIterable(0, 10)
 
-for (const number of generatorObject) {
+for (const number of iterable) {
   console.log(number)
 }
