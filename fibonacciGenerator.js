@@ -1,8 +1,9 @@
-function fibonacciGenerator(start = 0, end = 0) {
-  let counter = start
+function fibonacciGenerator(end = 0) {
+  let counter = 0
   let number1 = 0
   let number2 = 1
   let next = 0
+
   return function* generatorFunction() {
     while (counter < end) {
       yield number1
@@ -14,7 +15,7 @@ function fibonacciGenerator(start = 0, end = 0) {
   }
 }
 
-const generatorFunction = fibonacciGenerator(0, 10)
+const generatorFunction = fibonacciGenerator(10)
 const generatorObject = generatorFunction()
 
 for (let number of generatorObject){
