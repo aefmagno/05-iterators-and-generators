@@ -16,7 +16,7 @@ function fibonnaciIterable(end) {
             counter += 1
             return result
           }
-          return { value: undefined, done: true }
+          return { done: true }
         },
       }
     },
